@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", ui-serif, Georgia, serif;
+  
+  --color-brand-primary: #8B2635;
+  --color-brand-secondary: #C18F59;
+  --color-brand-bg: #FDFBF7;
+  --color-accent-luminous: #FFFAF0;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 347 57% 35%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 40 5% 96%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-[#FDFBF7] text-[#222] font-sans antialiased;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-black/5 backdrop-blur-md border border-white/10;
+  }
+}
+
+@layer components {
+  .luminous-shadow {
+    box-shadow: 0 0 20px rgba(139, 38, 53, 0.05), 0 0 40px rgba(193, 143, 89, 0.03);
+  }
+
+  .quran-text {
+    @apply font-serif leading-[2.2] text-justify;
+  }
+
+  .dimension-active {
+    @apply text-brand-primary bg-brand-primary/5 border-brand-primary;
+  }
+}

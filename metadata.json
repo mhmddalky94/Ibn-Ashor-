@@ -1,0 +1,6 @@
+{
+  "name": "بيان وهدى",
+  "description": "تطبيق يجمع بين عمق التفسير التحليلي وجمال الظلال الوجدانية ودقة أسرار النظم القرآني، مع تيسير المعاني ورسوم توضيحية بصرية لتسهيل الفهم والتأمل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
